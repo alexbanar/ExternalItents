@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExternalItents</string>
+    <string name="next_question">Tap for the answer and \npassing to the next question</string>
+    <string name="last_question">Tap for the answer</string>
+</resources>
