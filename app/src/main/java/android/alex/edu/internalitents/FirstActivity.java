@@ -24,7 +24,7 @@ public class FirstActivity extends AppCompatActivity
 
     private static final String RIGHT_ANSWER = "Haim Wiezman";
 
-    private int rightAnswersNumber = 0;
+    private int numberOfRightAnswers = 0;
     private int rightAnswerNumber = R.id.rbSecondAnswer;
 
     private TextView textViewQuestion;
@@ -65,14 +65,14 @@ public class FirstActivity extends AppCompatActivity
             radioGroupAnswers = (RadioGroup) findViewById(R.id.rgGroupAnswers);
             int checkedId = radioGroupAnswers.getCheckedRadioButtonId();
             if (checkedId == rightAnswerNumber) {
-                rightAnswersNumber += 1;
+                   numberOfRightAnswers += 1;
                 Toast.makeText(this, "Right Answer!",  Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "Wrong Answer. The answer is: " + RIGHT_ANSWER, Toast.LENGTH_LONG).show();
             }
 
             Intent intent = new Intent(this , SecondActivity.class);
-            intent.putExtra(RIGHT_ANSWERS_NUM, rightAnswersNumber);
+            intent.putExtra(RIGHT_ANSWERS_NUM, numberOfRightAnswers);
             startActivity(intent);
         }
     }
