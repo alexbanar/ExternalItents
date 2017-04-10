@@ -20,6 +20,6 @@ public class LastActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int numberOfRightAnswers = intent.getIntExtra(ThirdActivity.RIGHT_ANSWERS_NUM, 0);
         textViewResult = (TextView) findViewById(R.id.tvResult);;
-        textViewResult.setText("You score is " + numberOfRightAnswers + " right answers from " + PASSED_QUESTIONS_NUM);
+        textViewResult.setText("Your score is " + numberOfRightAnswers + " right answers from " + PASSED_QUESTIONS_NUM);
     }
 }

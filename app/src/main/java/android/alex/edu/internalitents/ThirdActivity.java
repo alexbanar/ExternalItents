@@ -73,7 +73,7 @@ public class ThirdActivity extends AppCompatActivity
                 numberOfRightAnswers += 1;
                 Toast.makeText(this, "Right Answer!",  Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(this, "Wrong Answer. The answer is: " + RIGHT_ANSWER, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Wrong Answer. \nThe answer is: " + RIGHT_ANSWER, Toast.LENGTH_LONG).show();
             }
 
             Intent intent = new Intent(this , LastActivity.class);
